@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('docker-hub-id')
+        DOCKERHUB_CREDENTIALS = credentials('credential')
         DOCKER_IMAGE = 'first-api-rest-f'
         DOCKER_TAG = 'latest'
     }
